@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The 'hello' command is for printing a greeting message.
 
 %description -l pl
-Komenda 'hello' slu¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
+Komenda 'hello' s³u¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
 
 %prep
 %setup -q
