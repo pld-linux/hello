@@ -22,7 +22,7 @@ Komenda 'hello' slu¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
 %configure \
 	--prefix=%{_datadir} --exec-prefix=%{_prefix}
 
-%{__make} 
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
