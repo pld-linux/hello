@@ -30,8 +30,6 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_infodir}}
 install hello $RPM_BUILD_ROOT%{_bindir}
 install hello.info $RPM_BUILD_ROOT%{_infodir}
 
-gzip -9nf NEWS README ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -43,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc NEWS README ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %attr(644,root,root) %{_infodir}/*
