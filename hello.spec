@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
+# Source0-md5:	70c9ccf9fac07f762c24f2df2290784d
 Patch0:		%{name}-pl.po-update.patch
 Patch1:		%{name}-info.patch
 Patch2:		%{name}-localenames.patch
