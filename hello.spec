@@ -5,8 +5,6 @@ Version:	1.3
 Release:	1
 License:	GPL
 Group:		Applications
-Group(de):	Applikationen
-Group(pl):	Aplikacje
 Source0:	ftp://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
