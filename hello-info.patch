@@ -1,0 +1,17 @@
+--- hello-2.1.1/doc/hello.texi.orig	Sat Jun  8 20:15:15 2002
++++ hello-2.1.1/doc/hello.texi	Tue Jan 28 23:59:16 2003
+@@ -38,12 +38,10 @@
+ 
+ @ifinfo
+ 
+-@dircategory Greeting Printing Program
+-@dircategory Mail Reader
+-@dircategory Programming
++@dircategory Miscellaneous:
+ 
+ @direntry
+-* Hello, world!: (hello).       GNU `Hello, world'.
++* Hello, world!: (hello).		GNU `Hello, world'
+ @end direntry
+ 
+ @c old settings:

@@ -1,5 +1,5 @@
 Summary:	Hello, world!
-Summary(pl):	Cze¶æ, to ja!
+Summary(pl):	Witaj ¶wiecie!
 Name:		hello
 Version:	2.1.1
 Release:	1
@@ -7,8 +7,10 @@ License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
 Patch0:		%{name}-pl.po-update.patch
+Patch1:		%{name}-info.patch
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	gettext-devel
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,7 +21,8 @@ Komenda 'hello' slu¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 %configure
