@@ -30,7 +30,7 @@ Komenda 'hello' slu¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install -d $RPM_BUILD_ROOT%{_infodir}
-install -s hello $RPM_BUILD_ROOT%{_bindir}
+install hello $RPM_BUILD_ROOT%{_bindir}
 install hello.info $RPM_BUILD_ROOT%{_infodir}
 
 gzip -9nf $RPM_BUILD_ROOT%{_infodir}/* \
