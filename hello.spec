@@ -2,7 +2,7 @@ Summary:	Hello, world!
 Summary(pl):	Witaj ¶wiecie!
 Name:		hello
 Version:	2.1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
@@ -29,8 +29,6 @@ Komenda 'hello' slu¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
 
 # de.po for de_DE exists and is up to date, de_DE.po is outdated
 rm -f po/de_DE*
-# nb_NO is an alias to no_NO in glibc
-mv -f po/{nb,no}.po
 
 %build
 %configure
