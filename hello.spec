@@ -1,19 +1,18 @@
 Summary:	Hello, world!
 Summary(pl):	Witaj ¶wiecie!
 Name:		hello
-Version:	2.1.1
-Release:	4
-License:	GPL
+Version:	2.2
+Release:	1
+License:	GPL v2+
 Group:		Applications
 Source0:	ftp://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
-# Source0-md5:	70c9ccf9fac07f762c24f2df2290784d
-Patch0:		%{name}-pl.po-update.patch
-Patch1:		%{name}-info.patch
-Patch2:		%{name}-localenames.patch
+# Source0-md5:	d2298e4b0c0a5b6e0746e929a7d0a401
+Patch0:		%{name}-info.patch
+Patch1:		%{name}-localenames.patch
 URL:		http://www.gnu.org/software/hello/hello.html
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	autoconf
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-devel >= 0.16
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,14 +26,13 @@ Komenda 'hello' s³u¿y do wy¶wietlania niezobowi±zuj±cego pozdrowienia.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
 
 # de.po for de_DE exists and is up to date, de_DE.po is outdated
 rm -f po/de_DE*
 
 %build
 %{__gettextize}
-%{__aclocal}
+%{__aclocal} -I gnulib/m4
 %{__autoconf}
 %{__automake}
 %configure
