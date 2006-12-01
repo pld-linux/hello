@@ -1,6 +1,10 @@
---- hello-2.1.1/po/LINGUAS.orig	Wed May 22 19:46:40 2002
-+++ hello-2.1.1/po/LINGUAS	Wed Mar  5 19:39:53 2003
-@@ -1,2 +1,2 @@
- # Set of available languages.
--ca da de de_DE el eo es et fi fr gl he hr hu id it ja ko lv nb nl nn pl pt pt_BR ru sk sl sv tr uk
-+ca da de el eo es et fi fr gl he hr hu id it ja ko lv nb nl nn pl pt pt_BR ru sk sl sv tr uk
+--- hello-2.2/po/LINGUAS.orig	2006-11-09 20:47:12.000000000 +0100
++++ hello-2.2/po/LINGUAS	2006-12-01 22:23:23.642309000 +0100
+@@ -10,7 +10,6 @@
+ ca
+ da
+ de
+-de_DE
+ el
+ eo
+ es
