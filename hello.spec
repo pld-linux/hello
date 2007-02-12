@@ -1,5 +1,5 @@
 Summary:	Hello, world!
-Summary(pl):	Witaj ∂wiecie!
+Summary(pl.UTF-8):   Witaj ≈õwiecie!
 Name:		hello
 Version:	2.2
 Release:	1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The 'hello' command is for printing a greeting message.
 
-%description -l pl
-Komenda 'hello' s≥uøy do wy∂wietlania niezobowi±zuj±cego pozdrowienia.
+%description -l pl.UTF-8
+Komenda 'hello' s≈Çu≈ºy do wy≈õwietlania niezobowiƒÖzujƒÖcego pozdrowienia.
 
 %prep
 %setup -q
