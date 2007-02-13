@@ -1,5 +1,5 @@
 Summary:	Hello, world!
-Summary(pl.UTF-8):   Witaj świecie!
+Summary(pl.UTF-8):	Witaj świecie!
 Name:		hello
 Version:	2.2
 Release:	1
