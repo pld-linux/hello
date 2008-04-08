@@ -5,7 +5,7 @@ Version:	2.3
 Release:	1
 License:	GPL v3+
 Group:		Applications
-Source0:	ftp://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
+Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
 # Source0-md5:	de3187eac06baf5f0506c06935a1fd29
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-localenames.patch
