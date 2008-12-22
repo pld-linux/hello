@@ -18,7 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The 'hello' command is for printing a greeting message.
 
 %description -l pl.UTF-8
-Komenda 'hello' służy do wyświetlania niezobowiązującego pozdrowienia.
+Komenda 'hello' służy do wyświetlania niezobowiązującego
+pozdrowienia.
 
 %prep
 %setup -q
@@ -57,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog* NEWS README THANKS TODO
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*.1*
+%{_mandir}/man1/hello.1*
 %{_infodir}/*.info*
