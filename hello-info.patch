@@ -1,0 +1,14 @@
+--- hello-2.4/doc/hello.texi.orig	2008-11-28 19:48:13.000000000 +0100
++++ hello-2.4/doc/hello.texi	2008-12-25 14:08:21.426511316 +0100
+@@ -31,9 +31,9 @@
+ @c concept index).
+ @syncodeindex op cp
+ 
+-@dircategory Basics
++@dircategory Miscellaneous:
+ @direntry
+-* Hello: (hello).               Hello, GNU world.
++* Hello: (hello).			Hello, GNU world
+ @end direntry
+ 
+ @titlepage
