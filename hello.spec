@@ -7,6 +7,7 @@ License:	GPL v3+
 Group:		Applications
 Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
 # Source0-md5:	1691faa758ca41c70b6da5501bdf230a
+Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -18,15 +19,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The 'hello' command is for printing a greeting message.
 
 %description -l pl.UTF-8
-Komenda 'hello' służy do wyświetlania niezobowiązującego
+Polecenie 'hello' służy do wyświetlania niezobowiązującego
 pozdrowienia.
 
 %prep
 %setup -q
-
-rm -f po/stamp-po
-# de.po for de_DE exists and is up to date, de_DE.po is outdated
-rm -f po/de_DE*
+%patch0 -p1
 
 %build
 %{__gettextize}
@@ -48,15 +46,15 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post	-p	/sbin/postshell
+%post	-p /sbin/postshell
 -/usr/sbin/fix-info-dir -c %{_infodir}
 
-%postun	-p	/sbin/postshell
+%postun	-p /sbin/postshell
 -/usr/sbin/fix-info-dir -c %{_infodir}
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog* NEWS README THANKS TODO
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/hello
 %{_mandir}/man1/hello.1*
-%{_infodir}/*.info*
+%{_infodir}/hello.info*
