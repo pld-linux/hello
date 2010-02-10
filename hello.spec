@@ -12,6 +12,7 @@ URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	gettext-devel >= 0.16
+BuildRequires:	help2man
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
