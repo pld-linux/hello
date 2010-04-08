@@ -1,12 +1,12 @@
 Summary:	Hello, world!
 Summary(pl.UTF-8):	Witaj świecie!
 Name:		hello
-Version:	2.5
+Version:	2.6
 Release:	1
 License:	GPL v3+
 Group:		Applications
 Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
-# Source0-md5:	cf4b73d837692b93676ccd723bf6f797
+# Source0-md5:	066ba7113eed3554cde6bc34b7b43e9b
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	autoconf >= 2.60
