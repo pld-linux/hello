@@ -1,19 +1,21 @@
 Summary:	Hello, world!
 Summary(pl.UTF-8):	Witaj świecie!
 Name:		hello
-Version:	2.6
+Version:	2.7
 Release:	1
 License:	GPL v3+
 Group:		Applications
-Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
-# Source0-md5:	066ba7113eed3554cde6bc34b7b43e9b
+Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.xz
+# Source0-md5:	7e746143ede48ea531bc7b120c8b42d9
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	gettext-devel >= 0.16
+BuildRequires:	gettext-devel >= 0.18.1
 BuildRequires:	help2man
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	texinfo
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
