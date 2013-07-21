@@ -1,12 +1,12 @@
 Summary:	Hello, world!
 Summary(pl.UTF-8):	Witaj świecie!
 Name:		hello
-Version:	2.7
+Version:	2.8
 Release:	1
 License:	GPL v3+
 Group:		Applications
-Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.xz
-# Source0-md5:	7e746143ede48ea531bc7b120c8b42d9
+Source0:	http://ftp.gnu.org/gnu/hello/%{name}-%{version}.tar.gz
+# Source0-md5:	6a67cbbbc0420061ef938a9a2736fbd6
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	autoconf >= 2.60
@@ -31,7 +31,7 @@ pozdrowienia.
 
 %build
 %{__gettextize}
-%{__aclocal} -I gnulib/m4
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure
