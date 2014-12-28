@@ -11,7 +11,7 @@ Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/hello/hello.html
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake >= 1:1.11.1
-BuildRequires:	gettext-devel >= 0.18.1
+BuildRequires:	gettext-tools >= 0.18.1
 BuildRequires:	help2man
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	texinfo
