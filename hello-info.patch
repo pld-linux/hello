@@ -1,8 +1,8 @@
---- hello-2.4/doc/hello.texi.orig	2008-11-28 19:48:13.000000000 +0100
-+++ hello-2.4/doc/hello.texi	2008-12-25 14:08:21.426511316 +0100
-@@ -31,9 +31,9 @@
- @c concept index).
- @syncodeindex op cp
+--- hello-2.11/doc/hello.texi.orig	2022-01-19 06:36:46.006531896 +0100
++++ hello-2.11/doc/hello.texi	2022-01-19 17:14:54.268402012 +0100
+@@ -30,9 +30,9 @@ Texts.  A copy of the license is include
+ @c the standard FSF Front-Cover and Back-Cover Texts, as given in
+ @c maintain.texi.
  
 -@dircategory Basics
 +@dircategory Miscellaneous:
